@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<!-- NEED TO ADD SEMANTIC HTML LIKE SECTIONS AND ALT= TO DESCRIBE THINGS -->
+
+<head>
+    <title>COVID-19 in Chicago</title>
+    <link rel="stylesheet" href="https://use.typekit.net/aeg2pfc.css">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='assets/styles.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- custom jquery code created to add and remove the class of invisible depending on which button the user clicks. -->
+    <script type="text/javascript" src="assets/fadein-out.jquery.js"></script>
+</head>
+
+<body>
+    <div class='container'>
+        <div class='all'>
+            <section id='comparison-graphic'>
+                <div class='maps'>
+                    <img id='chicago-covid19' src='assets/VectorChicagoZipMap-01.png'>
+                    <img id='chicago-black-pop' class='invisible' src='assets/VectorChicagoZipMap-02.png'>
+                    <img id='chicago-hispanic-pop' class='invisible' src='assets/VectorChicagoZipMap-03.png'>
+                    <img id='chicago-white-pop' class='invisible' src='assets/VectorChicagoZipMap-04.png'>
+                    <img id='chicago-asian-pop' class='invisible' src='assets/VectorChicagoZipMap-05.png'>
+                    <img id='chicago-income' class='invisible' src='assets/VectorChicagoZipMap-06.png'>
+                    <img id='chicago-foodstamps' class='invisible' src='assets/VectorChicagoZipMap-07.png'>
+                    
+                </div>
+                <div class='buttons'>
+                    <button id='covid19'>COVID-19 Cases</button>
+                    <button id='black'>Percentage of Black Residents</button>
+                    <button id='hispanic'>Percentage of Hispanic Residents</button>
+                    <button id='white'>Percent of White Residents</button>
+                    <button id='asian'>Percentage of Asian Residents</button>
+                    <button id='income'>Average Household Income</button>
+                    <button id='foodstamps'>Percentage of Residents on Foodstamps </button>
+
+
+                </div>
+                
+                <div class='keys'>
+                <img id='key-covid19'src='assets/Keys/Key1.png'>
+                <img id='key-black-pop'class='invisible' src='assets/Keys/Key2.png'>
+                <img id='key-hispanic-pop'class='invisible' src='assets/Keys/Key3.png'> 
+                <img id='key-white-pop'class='invisible' src='assets/Keys/Key4.png'>
+                <img id='key-asian-pop'class='invisible' src='assets/Keys/Key5.png'>
+                <img id='key-income'class='invisible' src='assets/Keys/Key6.png'>  
+                <img id='key-foodstamps'class='invisible' src='assets/Keys/Key7.png'>
+                
+                
+                
+                </div>
+
+
+            </section>
+            <!--ends div.family -->
+            <!-- ends section#comparison-graphic -->
+            <div class='info'>
+                <section id='history-section'>
+                    <div class='header'>
+                        <h2>COVID-19 in CHICAGO</h2>
+                        <img id='chistar' src='assets/Chistar.svg'>
+                    </div>
+                    <div class='subhead'>
+                        <h3>Which communities have been most affected by the COVID-19 pandemic in the city?</h3>
+                    </div>
+                    <!-- ends div.hheader-->
+
+                    <div class='history'>
+                        <p>Every day, the City of Chicago releases updates on how COVID-19 has affected communities across the city. Along with data that break downs the number of cases by age, gender, and race, the city posts a daily map that shows how many confirmed cases are in each city zipcode.</p>
+                        <p>In this visualization, the Chicago COVID-19 zipcode map is put in context with additional maps that outline the overall racial and socioeconomic makeup of each zipcode in the city. Through comparison, one can begin to see which communities have been most vulnerable to the COVID-19 pandemic.</p>
+                        
+                        <p id='note'>Note: For the purpose of creating this visualization, the COVID-19 data was frozen on April 15, 2020.</p>
+                    </div>
+                    <!-- ends div.history -->
+                </section>
+                <!--ends section#history-section -->
+
+                <section id=sources>
+                    <div class='sources'>
+                        <h4>Data Sources</h4>
+                        <p><a href='https://www.chicago.gov/city/en/sites/covid-19/home/latest-data.html'>City of Chicago daily COVID-19 updates</a></p>
+                        <p><a href='https://statisticalatlas.com/United-States/Overview'>Statistical Atlas: Database of U.S. Census data used to dollect racial and socioeconomic makeup of each Chicago zipcode</a></p>
+                    </div>
+                </section>
+                <!-- ends div.sources -->
+                <!-- ends section#sources-->
+            </div>
+            <!-- ends div.info -->
+        </div>
+        <!-- ends div.all -->
+    </div>
+    <!-- ends div.container -->
+
+</body>
+
+</html>
